@@ -1,0 +1,1443 @@
+Culvert ID,Question,Input,Comment_QC,Comment_FO
+A208,,,,
+A206,,,,
+A204,,,,
+A200,Physical Damage?,Moderate,Heavy,Corrected
+A200,Corroison,Moderate (Rusting on Inside AND Outside),Not Known,Can see both internal and external rusting
+A196,,,,
+A193,,,,
+A190,Silting,30% to 60% Silted,60% to 90% Silted,Corrected
+A180,,,,
+A179,,,,
+A177,,,,
+A144,,,,
+A174,,,,
+A171,,,,
+A168,,,,
+A163,,,,
+A160,,,,
+A157,,,,
+A154,,,,
+A150,,,,
+A148,,,,
+A147,,,,
+A140,SpanIn,18,Inaccessible to measure because of silting,Dig out and confirmed correct Span
+A140,RiseIn,18,Inaccessible to measure because of silting,Dig out and confirmed correct Rise
+B78,Inlet/Outlet End Section,Metal,NEP,"Not visible from photo, visible for inspectors"
+B78,Erosion Control,Concrete,NEP,"Asphalt lined channel, was slightly covered by silt"
+B75,,,,
+B74,,,,
+B73,,,,
+B65,Accessible?,Yes,No,"Not visible from photo, visible for inspectors"
+B65,Inlet/Outlet End Section,Metal End Section,NEP,"Not visible from photo, visible for inspectors"
+B57,,,,
+B59,,,,
+B58,,,,
+B54,,,,
+B52,Silting,Clean,Seems Minor silting and other side is heavily dumped with waste,"Mistake, fixed"
+B50,,,,
+B45,,,,
+B43,,,,
+B40,,,,
+C146,,,,
+C140,,,,
+C135,,,,
+C134,,,,
+C133,,,,
+C128,Gps point location,Outlet,In your comment you write outlet is not found . Thats why I am confused about your GPs point location whether it's Inlet orOutlet. Based on your answer you need also check the Inlet/Outlet End Section.,
+C127,,,,
+C123,Inlet and Outlet End Section,No End Section,"From picture, it could be unknown",
+C123,Silting,30% to 60% Silted,60% to 90% Silted,
+C120,Silting,10% to 30%,Seems like minor silting,
+C117,Width of Multiculvert,,Missing value,
+C113,Scour,Little or no scour,"As the culvert is >90% silted, this field should be blank",
+C112,Scour,Little or no scour,Culvert is inaccessible so this field should be blank,
+C109,,,,
+C107,,,,
+C104,Scour,Major Scour,Seems no scour or minor,
+C100,,,,
+D171,,,,
+D170,Corrosion,Non Evident,Minor (Rusting on Inside OR Outside),changed to minor for outside edge. Rest was just silt.
+D169,Corrosion,Non Evident,Minor (Rusting on Inside OR Outside),"just silt, not corrosion"
+D168,,,,
+D160,Corrosion,Non Evident,Minor (Rusting on Inside OR Outside),"just silt, not corrosion"
+D157,Corrosion,Non Evident,Minor (Rusting on Inside OR Outside),"just silt, not corrosion"
+D149,Corrosion,Non Evident,Minor (Rusting on Inside OR Outside),"changed to minor, rusting was only evident on the cut. No rusting inside, just silt."
+D148,,,,
+D147,,,,
+D142,,,,
+D141,,,,
+D139,,,,
+D133,Physical Damage,Moderate,It looks heavy damage,one side was minor and other heavy. Changed to heavy.
+D133,Corrosion,Moderate,Minor (Rusting on Inside OR Outside),still agreed that it is moderate rusting. Rusting was widely evident outside and inside.
+D132,,,,
+D129,,,,
+D128,,,,
+D127,,,,
+D126,,,,
+D120,,,,
+D118,,,,
+D115,Silting,10% to 30% Silted,Seems around 50%,was less than 50%. Still agree that it is 10-30%
+D114,,,,
+D109,,,,
+D106,,,,
+D102,,,,
+D97,,,,
+A97,GPS Point Location,CDI,But it looks MDI or SDI,Corrected
+A97,Physical Damage,Other,It looks minor damage,Minor damage to CDI concrete
+A90,Culvart Accessible?,Yes,NEP; but you can record other information where culvert inaccessible,2 of 3 culverts were accessible. Third was silted nearly full
+A75,Physical Damage,Other,NEP; minor(metal),Corrected
+A112,Scour,Little or no scour,NEP; Since outlet is covered leave blank.,
+A76,Physical Damage,Other,NEP; minor,Corrected
+A76,silting,10% to 30% Silted,One site of the pipe is 60% to 90 % silted,Corrected
+A103,Physical Damage,"Spalling, No Exposed Rebar (concrete)","Since it's a corrugated metal pipe, so spalling is not good option.You can report minor damage",Corrected
+A78,,,,
+A101,Corroision,None evident,NEP; it's probable minor corrosion,Corrected
+A132,Corroision,None evident,Not known,Corrected
+A115,Number of Culvert,Missing,From picture I think there is 1,Corrected
+A121,,,,
+A70,,,,
+A109,,,,
+A110,,,,
+A120,,,,
+A96,Silting,60% to 90% silted,From the photo looks like > 90%,Corrected
+A133,,,,
+A91,Silting,Minor Silting (<10%),Seems like 50% silting,Corrected
+A137,,,,
+A79,,,,
+A117,,,"only one photo taken, but reason not added in the comment",Inlet was visible but not accessible for photo
+A99,,,,
+B28,,,,
+B26,,,,
+B8,,,,
+B29,Accessible?,Yes,NEP; No. But you can record all other information,"Mistake, fixed"
+B29,Inlet and Outlet End Section,Concrete Slope Blanket,"It's hard to say from the picture,",It is a slope blanket
+B29,Culvert Shape,Circular,"Since it's silted, hard to say circular","We could see on the other side of the culvert that it was circular, no picture because inaccessible"
+B29,Corrosion,None Evident,Not Known,"Mistake, fixed"
+B29,Span In,120,"Since shape is unknown, keep blank",We were able to measure the span though not the rise due to the silt.
+B23,,,,
+B20,Physical Damage,Null,None,"Mistake, fixed"
+B7,,,,
+B21,,,,
+B5,,,,
+B35,,,,
+B36,,,,
+B34,,,,
+C39,Accessible,Yes,"It's no accessible, but you can keep record other information",
+C15,,,,
+C4,,,,
+C76,,,,
+C94,Physical Damage,None,Heavy Physical Damage,
+C57,,,,
+C53,,,,
+C89,,,,
+C72,,,,
+C14,,,,
+C25,,,,
+C9,,,,
+C26,,,,
+C2,,,,
+C85,Silting,10% to 30%,It seems like > 90%.,
+C30,,,,
+C71,Physical Damage,Moderate Damage,looks heavily damaged.,
+C74,,,,
+C22,,,,
+C67,,,,
+C77,,,,
+C78,,,,
+C29,,,,
+C95,,,,
+C13,,,,
+C61,Culvert Accessibility,No,Input should be Yes!,
+C16,,,,
+C82,,,,
+D15,Accessible,Yes,It's not accessible but you can report other information,updated.
+D15,Inlet/Outlet end section,,Not Known,updated.
+D21,,,,
+D77,Corroison,None Evident,"From one side of the pipe, it's minor corroison",no corrosion. Just line from water and silt
+D48,,,,
+D22,Accessible,Yes,No,was able to acces the side with wing wall fine. Able to obtain data.
+D22,Scour,Minor scour,NEP,vegetational does not allow you to see
+D18,,,,
+D43,,,,
+D28,,,,
+D82,Physical Damage,None,Minor,updated
+D82,Corrosion,None Evident,Minor,"silt, not corrosion"
+D75,,,,
+D36,,,,
+D89,,,,
+D24,Corrosion,None Evident,Not Known,updated
+D57,,,,
+D27,,,,
+D12,,,,
+D10,Culvert Accessibility,Yes,No should be the answer because it's not accessible because of running water and swamp,updated
+D65,,,,
+D38,,,,
+D34,,,,
+D64,,,,
+D69,,,,
+D40,,,,
+D7,,,,
+D44,,,,
+D23,,,,
+A210,,,,
+A213,Accessible?,Yes,NEP; it's look inaccessible,It is accessible.
+A213,Inlet/Outlet End Section?,No end section,It's hard to say no enc section; so you leave Unknownl,"based off field observation, culverts have no end section"
+A213,Culvert shape ?,Circular,It's hard to say say circular from picture. It could be arch or ellipse.,We dug to a reasonable extent to tell it is circular
+A213,Corrosion,Minor,"Since it's >90% silted, so I think not known",Corrected. We arrived at the initial conclusion because we could see some rust in and out of the exposed part of the culvert.
+A213,SpanIn and RiseIn,24,"If you are sure circular then it's ok, otherwise leave blank",We are confident it is circular.
+A218,Aceessible,Yes,It's seem inaccessible. But you can record as many information as possible.,It is accessible.
+A218,Inlet/Outlet End Section?,No end section,It's hard to say no enc section; so you leave Unknown,"Corrected, but we could tell there is no end section."
+A218,Culvert shape ?,Circular,It's hard to say say circular from picture. It could be arch or ellipse.,We dug enough to tell it is circular.
+A218,Corrosion,Major,"Since it's >90% silted, so I think not known",corrected
+A218,SpanIn and RiseIn,24,"If you are sure circular then it's ok, otherwise leave blank",We are confident it is circular.
+A219,Aceessible,Yes,It's seem inaccessible. But you can record as many information as possible.,Corrected.
+A219,Corrosion,Major,"Since it's >90% silted, so I think not known",Corrected.
+A224,Physical Damage ?,Minor,Moderate Damage,Corrected. We said minor because we can tell the damage would not impede flow.
+A225,Inlet End Section,other,NEP,"There is metal addition towards the end of the culvert, we do not know what type of end section it is, hence our choice of others."
+A229,,,,
+A232,,,,
+A236,,,,
+A239,Silting,30% to 60% Silted,Around 90% silting,Corrected.
+A241,,,,
+A243,,,,
+A245,Silting,30% to 60% Silted,Around 90% silting,Corrected
+A250,,,,
+A254,,,,
+A258,,,,
+B81,,,,
+B83,Physical Damage?,Minor Damage (metal),NEP,
+B87,Culvar shape?,Circular,NEP,
+B87,Siliting,30%-60%,60%-90% silting,
+B92,,,,
+B94,,,,
+B97,,,,
+B98,,,,
+C149,,,,
+C151,Silting,Clean,From one side of the pipe it's seem 10% to 30% silted,
+C154,Scour,Minor,major scour (> 3 ft),
+C159,,,,
+C161,,,,
+C163,,,,
+D176,Span In/ Rise,26,It's not standard pipe size,updated to correct standard size
+D176,Scour,Little or no scour,minor scour (1 to 3 ft),where it was placed it wasn't creating scour.
+D179,Corroision,Moderate,Major,agree to update to major
+D179,Span In/ Rise,26,It's not standard pipe size,updated to correct standard size
+D180,Physical Damage?,Minor,Moderate Damage s,added minor because it isn't disrupting flow or issues
+D180,Span In/ Rise,32,It's not standard pipe size,updated to correct standard size
+D185,Corroison,Moderate,Major,
+D185,Span In/ Rise,50,It's not standard pipe size,updated to correct standard
+D193,Span In/ Rise,32,It's not standard pipe size,updated to correct standard
+D195,Span In/ Rise,32,It's not standard pipe size,updated to correct standard size
+D196,Span In/ Rise,30,It's not standard pipe size,30 is listed as standard size
+D200,Number of Culverts,1,2,updated
+D201,Number of Culverts,2,1,there are two. Review comment
+D202,Span In/ Rise,74,It's not standard pipe size,updated to correct standard
+A60,Inlet End Section Type,Metal End Section,"NEP,",Was found after image was taken.
+A60,Physical Damage,None,"NEP; (None means good)
+Put other",Corrected
+A60,Corrosion,None evident,"None evident means good;
+You can put Not Known",Corrected
+A11,,,,
+A27,,,,
+A34,,,,
+A19,Accessible,No,NEP,Accessibility was marked Yes
+A19,Corrosion,None evident,"None evident means good;
+You can put Not Known",Corrected
+A19,Span In Rise In,"24,24",You can put comment; Its hard to say,Measurement is correct
+A55,Corrosion,None evident,"None evident means good;
+You can put 
+Minor (see booklet)",Corrected
+A55,Erosion Control,Grouted Rip Rap,NEP,Can confirm there is Grouted Rip Rap
+A45,Erosion Control,None,Since CBC; leave null,Corrected
+A49,Corrosion,None evident,"None evident means good;
+You can put 
+Minor (see booklet)",Corrected
+A36,Corrosion,None evident,"None evident means good;
+You can put 
+Minor (see booklet)",Corrected
+A66,Culvert ID,66,Alphabet missing,Corrected
+A61,Number of Culverts,1,"Inaccessible, so how do they determine the number?",Corrected
+A32,OutletEndSectionType,Metal End Section,NEP,Was found after picture was taken
+A56,,,,
+A29,,,,
+A8,,,,
+A40,,,,
+A42,,,,
+A53,,,,
+B15,,,,
+B26,,,,
+B29,Corrosion,None evident,"None evident means good;
+You can put 
+Not Known",changed
+B13,,,,
+B3,,,,
+B4,,,,
+B25,,,,
+B35,,,,
+B36,,,,
+C48,Inlet/Outlet section type,concrete slope blanket,It should be concrete slope blanket with safety grate,
+C43,,,,
+C40,,,,
+C14,,,This is not accessible so lot of information missing,
+C6,,,"Since CDI, a lot of information is missing",
+C2,,,,
+C21,,,,
+C27,,,,
+C3,,,,
+C20,,,,
+C33,,,,
+C34,,,,
+D2,Corrosion,None evident,"None evident means good;
+It's hard say the corrosion condition from picture",There was no corrosion present in the culvert itself. The safety grate had minor corrosion.
+D22,Accessible,Yes,NEP; you can check with book,for the inlet/outlet we were able to access the culvert and take the acquired information.
+D22,Scour,Minor Scour (1 to 3 ft),NEP,checked and still believe it's minor scour. Not evident in picture but evident in person with the equipment
+D18,Corrosion,None evident,"None evident means good;
+It's hard say the corrosion condition from picture",concrete culvert. Does not have corrosion. Could not delete the mistake of deleting our selection in corrosion.
+D18,Silted,10% to 30% Silted,From one picture it supposed more silted,not evident in the picture. Vegetation is taller then the silt itself. We still agree that there is 10-30% silt.
+D25,Accessible,Yes,It looks inaccessible,it was accesible. We were in the mud for a couple of minutes to acquire data
+D25,Physical Damage,Moderate Damage,It's look heavy damage,we still agree that it is moderate. The culvert is still usable and we were still able to gain measurement from the culvert. The only issue with getting accurate measurement was water.
+D25,Corrosion,None evident,"None evident means good;
+You can put 
+Not Known",agreed to change to not known because water was present
+D24,,,,
+D27,,,,
+D31,,,,
+D6,CulvertAccessibility,Yes,Looks filled with the running water,changed to other and made a comment that half of the culvert had running water.
+D6,Silting,Minor Silting (<10%),Should not be determined because of water.,was determined by being able to touch the under water part of the culvert and felt not silt
+D6,Scour,Little or no Scour ( < 1 ft),Should not be determined because of water.,topography looked flat with the vegetation which is why no scour was inputted
+D23,CulvertAccessibility,Yes,Looks filled with the running water,changed to below water.
+D23,Silting,10% to 30% Silted,Should not be determined because of water.,the shovel was pushed into the silt until we felt the other end of the culvert
+D23,Scour,Little or no Scour ( < 1 ft),Should not be determined because of water.,topography looked flat with the vegetation which is why no scour was inputted
+D13,CulvertAccessibility,Yes,Looks filled with the running water,changed to under water
+D13,Scour,Minor Scour (1 to 3 ft),Should not be determined because of water.,was determined with the measurement staff. Will keep in mind next time.
+A315,inlet/outlet end section,No end section,"NEP; 
+Not known is the good option",Corrected
+A315,Corroision,Minor,Not known,Corrected.
+A315,silting,30% to 60% silting,60% to 90% silting,corrected
+A325,,,,
+A285,Silting/ Scour,Null,I just want to make sure was it difficult in observing silting and scour?,"We had no direct access to CDI, so we could not tell if silted or not."
+A298,Physical damage?,other,None,corrected
+A303,,,,
+A337,Physical damage?,other,None,"NEP, but the plastic culvert is broken at the top."
+A327,,,,
+A322,Accessible?,Yes,No,We were able to dig enough to measure the span.
+A322,Corroision,Minor,Since silted more than 90% it's hard to say about minor corrosion.,Corrected.
+A331,Corroision,None Evident,Since it's concrete so leave blank corrosion,could not deselect.
+A294,,,,
+A320,,,,
+A306,silting,10% to 30%,More than 30% silting,corrected.
+A316,,,,
+A264,,,,
+A324,,,,
+A275,,,,
+A330,Channel Condition,Good,Weed/debris,weed appears not to impede flow.
+A284,,,,
+A261,,,,
+A300,,,,
+A319,,,,
+A270,,,,
+A262,,,,
+A271,,,,
+B110,,,,
+B116,,,,
+B120,Physical Damage ?,None,Minor,updated
+B120,Corroision,None evident,Minor,"there is no corrosion, it was dirt."
+B113,,,,
+B106,Culvert Accessibility,No,Yes,updated
+B118,,,,
+B119,Culvert Accessibility,No,Yes,updated
+B122,Raise In,39,As it's circular so Span In and Rise In should be equal,it was a typing mistake. updated.
+C167,Scour,Little or no scour,Minor scour,updated
+C169,,,,
+C198,Physical Damage,Moderate,Heavy,"damage only moderately effects flow through the culvert, most of the damage is to the end section"
+C197,,,,
+C174,,,,
+C165,,,,
+C187,,,,
+C192,,,,
+C166,,,,
+C201,,,,
+C196,,,,
+C177,Scour,Severe Scour (> 8 ft),Little or no Scour (< 1 ft),"the scour was addressed in the comment, shortly after the end of the culvert the ground drops off and is hollow."
+D209,Inlet End Section,No end section,Metal end section,updated
+D209,Outlet End Section,No end section,Metal end section,updated
+D209,Corrosion,Non evident,Minor Corrosion,it was just silt
+D209,Channel Condition,Weeds and Debris,NEP,could not go farther back to provide more evidence due to fence line.
+D233,Physical Damage,Minor,"Moderate, when we look the side of the end section in one picture.",determined to update
+D205,Inlet end section,No end section,Metal end section,agreed to update
+D205,Physical damage,Moderate damage,Heavy damage,"it's not disrupting the outflow because culvert is okay, it's just the end section."
+D205,Corrosion,None evident,Minor,updated.
+D250,Corrosion,Not Known,From one picture we can say Minor,we added ast not known because inlet doesn't seem to have any but we can't say none evident because outlet is silted and doesn't allow us to see
+D250,Siliting,10% to 30%,NEP,review first image of the outlet
+D250,Channel Type and Channel condition,,For channel type report no channel evident but in channelcondition report heavy vegeted; so it's mismatch the given information.,changed to ephemeral
+D226,,,,
+D212,GPS point location,,Missing,our Trimble says it's collected
+D239,Channel Type and Channel condition,,For channel type report no channel evident but in channelcondition report heavy vegeted; so it's mismatch the given information.,updated
+D216,,,,
+D244,,,,
+D229,,,,
+D222,,,,
+D203,,,,
+D211,,,,
+D243,,,,
+D221,,,,
+D204,,,,
+A379,,,,
+A376,Physical Damage,Moderate,"Since in your comment you write due to too damage you can't measure correctly span in and rise In, so I think Heavy physical damage.",Corrected.
+A374,,,,
+A373,,,,
+A370,Outlet end section,No end section,"since outlet is under the water, did you verify that there is no end section?","Yes, we verified, outlet has no end section."
+A370,Channel Type and Condition,,"In channel type you report non evident but in channel condition you report good, so I am little confused.",It was a mistake and we couldn't deselect.
+A364,Culvart shape,Circular,From one picture it's seem Ellipse; If I am right you have to check the span in and rise in.,We measured rise and span and can confirm the culvert shape is circular.
+A361,,,,
+A356,,,,
+A354,,,,
+A349,Silting,,You could input > 90% silting as an input,We were unable to access the culvert because of steep slopes and so can't tell if silted or not.
+A347,,,,
+A344,,,,
+A339,,,,
+A338,Silting,Minor Silting (<10%),"From the photo, it looks like siliting is heavier. please double check","We are confident the culvert has minor silting, however, there are heavy weeds on the culvert."
+B166,,,,
+B164,,,,
+B163,,,,
+B160,,,,
+B154,,,,
+B150,,,,
+B147,,,,
+B138,,,,
+B137,,,,
+B134,,,,
+B131,,,,
+B127,,,,
+B126,,,,
+B124,,,,
+C227,,,,
+C226,,,"Since the culvert is accessible why most of the informations are missing, please mention in comment section",corrected
+C222,,,,
+C221,,,,
+C218,Corrision,None evident,Not known,corrected
+C218,Silting,10% to 30%,30% to 60%,corrected
+C214,,,,
+C212,,,,
+C208,,,,
+C205,,,,
+C202,,,,
+D299,Corrosion,None evident,Minor,just the silt
+D294,,,,
+D292,Silting,10% to 30%,30% to 60%,"the safety grate part only had a lot of silt due to safety grate, culvert itself has 10% to 30%"
+D290,,,,
+D287,,,,
+D284,Material,Other,"The inlet and outlet end sections are different, but the pipe inside is corrugated metal ","no, when we walked through the culvert inside of it. Half of it had been a concrete culvert and the other half was corrugated metal."
+D284,Corrosion,None evident,Minor,just silt
+D280,Material,Other,"The inlet and outlet end sections are different, but the pipe inside is corrugated metal ","no, when we walked through the culvert inside of it. Half of it had been a concrete culvert and the other half was corrugated metal."
+D277,Material,Other,"The inlet and outlet end sections are different, but the pipe inside is corrugated metal ","no, when we walked through the culvert inside of it. Half of it had been a concrete culvert and the other half was corrugated metal."
+D270,,,,
+D268,,,,
+D264,,,,
+D262,,,,
+D259,Number of Culverts,2,It looks like 1,"there are 2, just heavily vegetated"
+D259,Width of MultiCulverts Ft,9,If number of culvert is 1 then it should be blank,there is more than one
+D258,,,,
+D255,,,,
+D253,,,,
+A478,,,,
+A475,,,,
+A474,,,,
+A470,Channel type,No channel evident,"Since some water is seen infront of the culvert, can you make sure please channel type and channel condition.",
+A467,Physical damage,Minor,Moderate,
+A467,,silting,30% to 60%,
+A463,,,,
+A458,Material,Blank,"Material is visible, so you can indicate it.",
+A458,Silting,Blank,It's clearly > 90% silting,
+A455,,,,
+A452,,,,
+A451,Silting,10% to 30% Silted,Looks like minor silting,
+B222,,,,
+B219,Accessible ?,No,"Yes, since most of the information you have collected.",
+B216,,,,
+B212,,,,
+C310,,,,
+C306,,,,
+C304,Accessible,Yes,No,
+C302,,,,
+C299,,,,
+C295,,,,
+D384,,,,
+D383,,,,
+D380,silting,minor,10% to 30% silting,updated
+D378,,,,
+D376,,,,
+D371,,,,
+D370,,,,
+D366,,,,
+B247,,,,
+B246,,,,
+B250,,,,
+B265,,,,
+B252,,,,
+B259,,,,
+B248,,,,
+B263,,,,
+B254,,,,
+B258,,,,
+C373,,,,
+C384,,,,
+C340,,,,
+C376,Inlet End Section,Metal End Section,Since inlet is not located (from your comment) so Not known is best option.,Updated
+C353,Number of Culverts,1,3,Updated
+C362,Corrosion,Minor,Moderate (from outside of the pipe),Updated
+C392,Outlet end section,Metal end section,"Since outlet is inaccessible, can you ensure the outlet end section type?","Updated, the end section was visible but not in the picture"
+C392,Silting,Clean,"Since there some silt inside the pipe, so we can say Minor silting.",Updated
+C380,,,,
+C382,,,,
+C370,GPS point location,,Missing,Updated
+C335,,,,
+C404,,,,
+C418,,,,
+C336,,,,
+C339,,,,
+C347,GPS Point Location,,The field is blank,Since we could not determine which side was inlet or outlet we left it blank.
+C381,,,,
+C387,,,,
+C390,,,,
+C414,,,,
+C421,,,,
+C355,,,,
+C341,,,,
+C393,,,,
+C398,,,,
+C377,,,,
+D448,,,,
+D434,Physical Damage,Minor,Moderate,still minor damage. Nothing is obstructing the flow of the water.
+D456,,,,
+D446,Physical Damage,None,Minor,updated
+D432,Silting,clean,"Since there is some visible silt inside, I think minor silting is good option.","could potentially still be considered clean, but updated."
+D442,,,,
+D445,,,,
+D427,,,,
+D453,,,,
+D455,,,,
+D441,,,,
+D431,,,,
+D416,,,,
+D433,,,,
+E41,,,,
+E25,,,,
+E20,,,,
+E30,Corrosion,Minor,None Evident,corrosion inside the culvert
+E27,Corrosion,Minor,None Evident,corrosion inside the culvert
+E28,Corrosion,Major,Minor,"there's major corrosion inside the culvert, we already commented about it."
+E39,,,,
+E16,,,,
+E33,,,,
+E24,,,,
+B315,Number of culvert,5,"NEP, although you mention in your comment, can you ensure number of culvert?",
+B315,Channel type and condition,No channel evident,"For channel type your answer was No channel evident, but in channel condition you mention heavy vegeted, so there is some mismatch information.",
+B313,,,,
+B311,,,,
+B308,,,,
+B304,,,,
+B302,Silting,60% to 90% Silted,> 90% silted,
+C517,Culvert Accessible?,Yes,"Since you could not measure span in and rise in due to heavy silting, culvert is inaccessible",
+C514,,,,
+C510,,,,
+C506,Culvert Accessibility,Yes,No,
+C506,Silting,Blank,> 90%,
+C505,GPS Point Location,Outlet,"T-Post Reflector, or please double check whether it was an outlet.",
+C503,,,,
+D507,Silting,Null,I think you can put 60% to 90% silted,"ok, updated . We had mentioned out input on the comments"
+D504,Physical Damage,None,Minor,"ok, updated"
+D503,,,,
+D500,Inlet End Section Type,Metal End Section,Metal culverts with safety grates,please review the comment.
+D500,Outlet End Section Type,Metal End Section,"Metal culverts with safety grates, if there is any option like that please input",please review the comment. There is no option of metal end section with safety grate.
+D496,,,,
+D494,,,,
+E80,,,,
+E78,,,,
+E76,Physical Damage,Moderate,Looks Major,
+E75,,,,
+A404,Inlet and outlet end section,other,headwall,
+A404,Physical damage,other,spalling and cracks on headwall/apron,
+A428,,,,
+A397,Physical damage,None,Moderate,
+A397,Corrosion,Moderate,None evident,
+A421,Corrosion,Moderate,Minor,
+A425,Corrosion,Moderate,Minor,
+A446,Physical damage,Minor,Moderate,
+A437,Physical damage,Minor,Moderate,
+A437,Corrosion,Moderate,Minor or none evident,
+A399,Corrosion,Moderate,Minor,
+A399,Silting,clean,minor,
+A401,Physical Damage,Minor,None,
+A401,Silting,Minor,clean,
+A443,Physical Damage,Minor,Moderate,
+A433,Silting,30% to 60%,60% to 90%,
+A429,Gps Point Location,,Why the field is blank?,
+A423,Culvert Shape,,The field is empty; it should be a circle.,
+A387,,,,
+A413,,,,
+A402,,,,
+A417,,,,
+A418,,,,
+A398,,,,
+A400,,,,
+A411,,,,
+A403,,,,
+B193,Silting,10% to 30%,"Since outlet is heavily vegeted with silting, can you ensure the silting percentage within pipe?",We were able to move the vegetation and look inside.
+B178,,,,
+B167,,,,
+B175,,,,
+B194,Culvert Shape ?,Circular,Ellipse; If it's ellipse please update the risein and span in.,First we thought its an ellipse. that's why we measured it twice.
+B194,Corroision,Moeerate,Minor,moderate corrosion visible inside the culvert.
+B200,Inlet end section,Missing,"You don't put any comment
+why inlet endsection is missing.",updated
+B198,,,,
+B172,,,,
+B201,,,,
+B179,,,,
+B204,,,,
+B183,,,,
+B187,,,,
+B199,,,,
+C290,,,,
+C267,,,,
+C264,,,,
+C285,,,,
+C229,,,,
+C261,Culvert shape?,Circular,"NEP; Ellipse.
+If it's an ellipse please check span in and rise in.",it is circular
+C230,Outlet end section,No end section,other,"it did not have an end section, it is a cattle fence placed against the end."
+C270,Channel condition,good,heavily vegetated,Corrected
+C277,,,,
+C250,Physical Damage,Minor,Moderate,damage has little effect on flow so is minor damage
+C274,,,,
+C293,,,,
+C262,,,,
+C283,,,,
+C243,,,,
+C240,Number of Culvert,1,"In your comment, you mentioned, culvert could not be located. Then how do you count the number of culverts?","Information field is auto filled when creating a form, we forgot to remove it"
+C260,,,,
+C248,,,,
+C292,,,,
+C278,,,,
+D323,,,"Can you check this point please, there is no photo and other relevant information.",fixed the problem and added information
+D312,,,,
+D343,,,,
+D333,Silting,Minor,Clean,believed that it can still be minor since there's some in the culvert.
+D309,,,,
+D329,Corrosion,Moderate,Minor,rusting nep but there was rusting inside and outside. Comment has been made on the form
+D337,,,,
+D306,,,,
+D308,,,,
+D353,,,,
+D304,,,,
+D330,,,,
+D338,,,,
+D332,,,,
+D316,,,,
+D318,Silting,10% to 30% Silted,It looks more than 30% silted.,only on the outside of the culver and vegetation is very height. The culvert has 10-30% silt
+D355,,,,
+D341,Silting,Clear,It doesn't look clean. Can put minor silting.,the culvert itself was clean until the very end where the safety grate was in outlet.
+D313,Silting,10% to 30% Silted,Should be minor silting.,updated
+B230,,,,
+B227,,,,
+B242,,,,
+B229,Corrosion,None Evident,Minor,Corrosion is actually dirt
+B243,,,,
+B236,Number of Culvert,1,Should be 2,Error Corrected
+B234,,,,
+B225,,,,
+C311,,,,
+C323,Physical Damage,None,Minor,Updated
+C330,,,,
+C332,,,,
+C327,,,,
+C326,,,,
+C322,Silting,Clean,Looks like inlet is silted,Updated
+C313,,,,
+D389,Number of culverts?,3,"NEP, 2","please review comments, there are 3 culverts"
+D389,Silting,Minor < 10%,"NEP, 60% to 90%","not 60% to 90% the culvert has minor silting, the plants where the safety grate makes it seem like there is more"
+D391,Physical Damage,Minor,"Since end let action is disjointed from the pipe, so i think it's a heavy damage","changed to heavy, however, it was not obstructing the flow."
+D386,,,,
+D411,,,,
+D404,,,,
+D390,,,,
+D388,Silting,60% to 90%,Looks like > 90%,updated
+D405,,,,
+D413,,,,
+D412,,,,
+E2,Physical Damage,No input,None,updated
+E12,,,,
+E13,Scour,Severe Scour,Doesn't looks like a severe scour,"scour isn't visible in the picture, so we updated the comment."
+E5,,,,
+A596,Silting,30% to 60%,Looks 100%,Corrected
+A594,,,,
+A593,,,,
+A589,,,,
+A584,,,,
+A575,,,,
+A570,,,,
+A568,,,,
+A565,Silting,30% to 60%,Looks > 90%,"Only silted at ends of culvert, inside was nearly clean."
+A562,,,,
+A561,,,,
+A560,,,,
+A630,Silting,Clean,Minor,Corrected
+A624,Physical Damage,Moderate,NEP,Could not get a good picture of damage due to water.
+A623,,,,
+A622,,,,
+A614,Corrosion,Not Known,None evident,Not Known due to vegetation and silting.
+A610,,,,
+A609,Physical Damage,Moderate,Minor,"Moderate, since shape of the culvert altered."
+A606,,,,
+A605,,,,
+A604,,,,
+A602,Physical Damage,Moderate,Minor,"Moderate, since shape of the culvert altered."
+A602,Corrosion,Moderate,"Not Known, since the culvert is 90% silted.","Silting is marked at 60%-90%, closer to 60%. Moderate corrosion was assessed."
+A601,Physical Damage,Minor,"Moderate, sice shape of the culvert altered.",Corrected
+B369,,,,
+B357,,,,
+B354,,,,
+B342,Inlet and Outlet End Section,Headwall with Wingwalls,Other,"Structure fits Handbook headwall definition, does not specify need to surround pipe"
+B342,Silting,Minor,Clean,Error corrected
+B356,,,,
+B370,,,,
+B343,,,,
+B355,,,,
+B353,Silting,Clean,NEP,
+B376,,,,
+B346,,,,
+B374,,,,
+C606,Physical Damage,Moderate,"Major, since shape is altered.",based on handbook it is more consistent with moderate damage
+C606,Corrosion,Minor,Moderate,the Pipe is only corroded on the outside so it is minor
+C587,,,,
+C579,,,,
+C561,,,,
+C628,,,,
+C601,Corrosion,None Evident,Not Known,fixed
+C573,,,,
+C602,,,,
+C629,Physical Damage,Moderate,Minor,fixed
+C614,,,,
+C618,,,,
+C583,,,,
+C565,,,,
+C620,,,,
+C563,,,,
+C571,,,,
+C589,,,,
+C558,,,,
+C598,Comments,Blank,"Should add comment because, this is not completely silted up!",fixed
+C577,Silting,Clean,Have you checked outlet before putting silting as clean? From the photo it's not evident.,it could be seen through the culvert that the other side was not silted
+C590,,,,
+C574,,,,
+C591,,,,
+D607,Physical Damage,None,Minor,updated
+D607,Corrosion,Minor,Moderate,most of it was silt. Corrosion is still minor
+D575,,,,
+D561,,,,
+D594,Silting,60% to 90%,>90%,updated
+D585,,,,
+D556,,,,
+D578,,,,
+D583,,,,
+D630,,,,
+D597,,,,
+D619,,,"Since the both side of the culvers seems to inaccessible, so can you make sure all reported information, specifically culvert shape, size, corrosion etc.","it was not inaccessible, we were able to acquire data"
+D577,,,,
+D616,,,,
+D604,,,,
+D592,,,,
+D568,Silting,Clean,"Was it visible that it's clean, as you commented that inlet is under debrish",we were able to see it in the culvert
+D568,Channel condition,Weeds and/or Debris,It looks likeswampy and heavily vegetated,changed
+D627,,,,
+D589,,,,
+D567,,,,
+D591,,,,
+D626,,,,
+D622,,,,
+D569,,,,
+D574,,,,
+E126,Channel condition,Good,Weeds and/or Debris,updated
+E113,,,,
+E98,,,,
+E97,Physical Damage,"Spalling, No Exposed Rebar (concrete)",NEP,Inlet has physical damage (not visible in picture). Changed to circular concrete pipe damage.
+E97,Channel Condition,Weed and/or debris,But you reported there is no channel evident,updated channel type.
+E106,Physical Damage,"Spalling, No Exposed Rebar (concrete)",NEP,changed to none.
+E123,,,,
+E122,,,,
+E121,,,,
+E110,,,,
+E107,,,,
+E104,,,,
+E128,,,,
+B298,,,,
+B296,Erosion_Control,Wire-Enclosed Rip-Rap Pad,NEP,Behind picture view
+B293,,,,
+B290,,,,
+B288,,,,
+B287,Photos_Multiple,,Missing Photo,Will fix error
+B283,,,,
+B278,,,,
+B277,,,,
+B276,,,,
+C501,,,,
+C497,Corrosion,Not Known,Minor,
+C497,Silting,10% to 30%,NEP; less than 10% silted,
+C490,Corrosion,Not Known,Non evident,
+C488,,,,
+C482,,,,
+C479,,,,
+C474,,,,
+C473,Culvert shape,Arch Pipe,Ellipse,
+C473,Corrosion,Minor,Moderate,
+C471,Culver Accessible?,Yes,"NO, since culvert more than 90% silted",
+C471,silting,60% to 90%,>90% silted,
+C468,Number of culvert,4,"NEP, 2",
+C467,,,,
+C466,,,,
+C463,GPSPointLocation,Blank,Why is the GPS location is blank.,
+C458,,,,
+C457,,,,
+C453,,,,
+C451,,,,
+C447,,,,
+C443,,,,
+C435,,,,
+C431,Corrsion,Minor (Rusting on Inside OR Outside),It looks moderate!,
+C426,,,,
+C423,Silting,Clean,"From the picture, it's not evident that it's clean.",
+C422,CulvertAccessibility,No,It looks like yes from the picture!,
+D493,,,,
+D492,,,,
+D490,,,,
+D488,,,,
+D484,Material,Concrete,"NEP,Corrugated Metal",updated
+D480,,,,
+D475,,,,
+D472,,,,
+D468,,,,
+D463,,,,
+D459,,,,
+D458,Silting,30% to 60% Silting,It looks like it's around 90% silting.,please review the comment. The outlet is just under the heavy vegetation.
+E72,Physical Damage,Minor,Moderate,updated
+E69,,,,
+E67,GPS point location,outlet,"Comparing two picture, i think gps point location was inlet.",its an outlet
+E67,Reason of Inaccessible,Steep slopes,"Since one side of the pipe is accessible, you can put about steep slopes in the comment section",
+E67,Inlet end section,No end section,other,it's not part of the end section. It's just a loose metal part.
+E62,,,,
+E60,Physical Damage,None,Minor,updated
+E57,,,,
+E54,,,,
+E53,,,,
+E48,,,,
+E44,,,,
+A673,silting,60% to 90%,>90%,
+A680,,,,
+A645,,,,
+A679,,,,
+A662,Corrosion,Major,Moderate,
+A656,,,,
+A666,Physical damage,None,Minor,
+A646,,,,
+A643,,,,
+A651,,,,
+A674,,,,
+A635,Channel Condition,Good,Looks swampy and heavily vegited,
+A637,Channel Condition,Good,Looks swampy and heavily vegited,
+A664,,,,
+A686,,,,
+A682,,,,
+A681,,,,
+A657,,,,
+B379,,,,
+B382,Inlet end section,Headwalls,headwall with wingwalls,
+B390,,,,
+B380,Inlet end section,Headwalls,headwall with wingwalls,
+B380,Erosion Control,None,Wire enclosed riprap,
+B389,,,,
+B393,,,,
+B404,,,,
+B381,Inlet End Section Type,Headwall,Headwall with wingwalls,
+B377,Inlet End Section Type,Headwall,Headwall with wingwalls,
+B402,,,,
+C696,,,,
+C688,,,,
+C685,,,,
+C683,Outlent end section,Metal end section,"In your comment you mentioned outlet was not found, so outlet end section should be unknown.",fixed
+C683,Scour,Sever,"NEP; since outlet was not found, can you make ensure about the scour level?",yes the outlet was located in a very deep degrading channel we just couldn't get down to it to find where it was
+C682,,,,
+C676,Culver ID,C275,C675,fixed
+C676,Corrosion,Minor,Moderate; since the corrosion is deep,fixed
+C674,,,,
+C672,,,,
+C669,,,,
+C662,,,,
+C657,,,,
+C654,,,,
+C652,,,,
+C650,,,,
+C646,,,,
+C645,Culvert Shape,Circular,NEP,
+C645,Span In * Rise In,48*48,Doesn't looks circular,the ends of the culvert were terminated at an angle to accommodate for the skew making them look elliptical but it was circular.
+C644,,,,
+C641,,,,
+C640,,,,
+C637,,,,
+D652,,,,
+D666,,,,
+D655,,,,
+D637,,,,
+D644,Physcical Damge,Heavy,NEP,in the first picture of the outlet you can see the culvert has been heavily compressed
+D638,,,,
+D679,,,,
+D662,,,,
+D658,,,,
+D636,,,,
+D660,,,,
+D641,,,,
+D654,,,,
+D646,,,,
+D661,Outlet End Section Type,No End Section,NEP,it's there just nep
+D690,,,,
+D669,Reason for Inaccessability,"Weeds, Debris, Heavy Vegetation","But in your comment, you mentioned that you could not able to take the measurements because of running water.",outlet was heavily vegetated and the inlet had running water. Both inlet and outlet had no accessibility for different reasons
+D671,,,,
+E150,Corrosion,Moderate,One of culvert looking heavy corrosion in outside,updated
+E139,,,,
+E157,,,,
+E138,,,,
+E140,Silting,Blank,>90%,updated
+E144,,,,
+E147,,,,
+E152,,,,
+A490,,,,
+A485,Physical Damage,Minor,Moderate,Fixed
+A481,,,,
+A492,Span In * Rise In,72 * 54,Standard 73* 55,Fixed
+A491,,,,
+A504,,,,
+A480,Silting,60% to 90% Silted,> 90%,Silting was only about 2/3rds of culvert on outlet side
+A484,,,,
+B337,,,,
+B330,,,,
+B331,Span In * Rise In,126 * 100,It does not match with standard Arch Pipe Size.,Does not align with standard measurements. noted in comments
+B320,,,,
+B336,Silting,Clean,"In your comment, you mentioned that the Rocks most likely obstructing, so in that case is it logical to use silting as clean? Please clarify.",Error Corrected
+B339,,,,
+B328,,,,
+B334,,,,
+C555,Silting,30% to 60%,NEP,"The other side was more silted, we could see through the pipe to see that but we couldn't find the other side"
+C536,,,,
+C523,Culvert ID,5221,522,Fixed
+C535,,,,
+C519,,,,
+C545,,,,
+C551,,,,
+C534,,,,
+C546,,,,
+C556,,,,
+C557,,,,
+D536,,,,.
+D529,,,,
+D531,,,,
+D542,,,,
+D550,,,,
+D554,,,,
+D543,,,,
+D511,,,,
+D519,,,,
+D509,,,,
+D518,,,,
+D552,,,,
+D535,,,,
+E86,,,,
+E88,,,,
+E90,,,,
+E91,,,,
+A697,,,,
+A722,Inlet end section,,You said you will update it later,updated
+A730,Inlet end section,,You said you will update it later,updated
+A700,,,,
+A709,Inlet is MDI/SCI,Missing,No,updated
+A709,Inlet End Section,,"Since you didn't mention anything about inlet end section in your comment, so I think you missed in reporting the inlet end section",updated
+A705,Inlet is MDI/SCI,Missing,No,updated
+A705,Inlet end section,,You said you will update it later,updated
+A704,Inlet is MDI/SCI,Missing,No,updated
+A704,Inlet end section,,You said you will update it later,updated
+A710,,,,
+A731,Inlet End Section Type,Missing,"You said you would update, but it's empty!",updated
+A712,,,,
+A718,Inlet End Section Type,Missing,"You said you would update, but it's empty!",updated
+A701,Inlet End Section Type,Missing,"You said you would update, but it's empty!",updated
+A706,Inlet End Section Type,Missing,"You said you would update, but it's empty!",updated
+A733,Inlet End Section Type,Missing,"You said you would update, but it's empty!",updated
+B418,,,,
+B415,Span In and Span Rise,30 by 18,But it doesn't match with standard arch pipe size,
+B425,Outlet end section,Metal end section,NEP,
+B423,,,,
+B426,,,,
+B420,Culvert_Shape,Circular,But your Spanin and Raisein are not the same. Please check!,
+C700,,,,
+C699,,,,
+C697,silting,30% to 60%,"NEP, 10% to 30%",
+C705,,,,
+"C712
+C698",,,,
+D696,,,,.
+D693,,,,
+A871,,,,
+A868,,,,
+A867,,,,
+A865,Outlet end section,No end section,"Since inlet end section is (other) visible, the outlet end section is covered by silted, so probably we are unsure about end section. I think unknown would be good option.",The picture does not show we were able to dig down enough to verify there is no end section.
+A865,Silting,clean,"NEP, 30% to 60%",Corrected
+A862,Inlet end section,other,metal end section,See comment about inlet. Outlet is metal end section not inlet.
+A859,Inlet end section,other,metal end section,"See comment and picture. Inlet end section is not metal, Outlet is both metal and concrete end section."
+A857,,,,
+A853,,,"Please update the missing information. The gps point location, inlet end section are not supported by single image. Please add another image that will support filled information.",Updated
+A849,,,,
+A846,,,,
+A842,,,,
+A838,,,,
+A834,,,,
+A831,,,,
+A827,,,,
+A826,,,,
+B534,,,,
+B531,,,,
+B528,,,,
+B527,,,,
+D896,,,,
+D893,Physical Damage,Heavy,Moderate,updated
+D891,,,,
+D888,,,,
+D885,,,,
+D882,,,,
+D878,,,,
+D877,Comments,No corrosion just silt,But silting entered as clean!,"it is still clean, culvert just has a bit of dirt"
+D874,,,,
+D869,Scour,Little or no Scour ( < 1 ft),Looks moderate!,changed to minor
+E304,,,,
+E303,,,,
+E301,,,,
+E294,Silting,30% to 60% Silted,Looks >90%,
+E293,,,,
+E292,,,,
+E304,,,,
+E303,,,,
+E301,,,,
+E294,Silting,30% to 60% Silted,Looks >90%,
+E293,,,,
+E292,,,,
+A906,,,,
+A873,Silting,10% to 30%,more than 30%,Corrected
+A911,,,,
+A915,,,,
+A902,,,,
+A908,Physical damage,Minor,NEP; Moderate,"Minor damage to end section, actually culvert is not damaged."
+A885,,,,
+A891,,,,
+A881,,,,
+A894,InletisMDIorSCI,No,Yes,"MDI is not main in let, it drains into larger culvert. Point was taken at MDI due to accuracy."
+A893,InletisMDIorSCI,No,Yes,"MDI is not main in let, it drains into larger culvert. Point was taken at MDI due to accuracy."
+A895,InletisMDIorSCI,No,Yes,"MDI is not main in let, it drains into larger culvert. Point was taken at MDI due to accuracy."
+A905,,,,
+A897,,,,
+B546,,,,
+B575,,,,
+B542,,,,
+B568,,,,
+B548,,,,
+B552,,,,
+B565,,,,
+B550,,,,
+B571,,,,
+B574,,,,
+B573,,,,
+B549,,,,
+D916,,,,
+D914,,,,
+D934,Corrosion,Minor,NEP;Moderate,"minor, please review comment. Rusting is just on the inside"
+D947,Corrosion,None evident,"NEP, minor","just dirt, no corrosion"
+D947,Silting,clean,"NEP, 30% to 60%",updated
+D942,,,,
+D918,,,,
+D927,,,,
+D939,Physical Damage,None,Minor,updated
+D910,,,,
+D950,,,,
+D912,OutletEndSectionType,No End Section,"As outlet is invisible accordiong to your comment, how you know about end section?","there's no end section, we never said it's invisible just under vegetation"
+D912,Silting,Clean,Same how you know about silting,we could still see the inside of the culvert
+D912,Scour,Little or no Scour ( < 1 ft),How you know about scour,we could see there was no scour
+D943,,,,
+D908,,,,
+D904,,,,
+D938,PhysicalDamage,Moderate,Minor,ok
+D905,Silting,10% to 30% Silted,60%-90%,"just the vegetation that makes it seem like more, silting input is correct"
+D899,Silting,60% to 90% Silted,>90%,ok
+D945,,,,
+E308,,,,
+E305,,,,
+E314,InletEndSectionType,Blank,Metal End section,updated
+E313,,,,
+A781,,,,
+A779,,,,
+A778,Inlet is MDI or SCI?,No,But in your comment you write MDI is visible.,Updated
+A778,Inlet end section,,Try to update later,
+A773,,,"In your comment you write inlet is A752 that means you updated the outlet later for A752. But I think you don't need to create any new point (A773)
+since you are still working on same culvert (A752). For clearification can you discuss this issue with Professor Claudia Wilson? If I am wrong please let me know.",Updated
+A770,,,,
+A767,,,Please update the missing infromation later.,updated
+A762,,,,
+A760,,,Please update the missing infromation later.,updated
+A757,Outlet End Section Type,Blank,"Not updated, although mentioned in the comment",updated
+A755,,,Looks like A755 and A757 same culvert. Please check. Probably you entered same culvert in formation in two different form.,updated
+A754,,,,
+A747,,,,
+A737,Out let End Section Type,Blank,"Not updated, although mentined in the comment",updated
+A736,Out let End Section Type,Blank,"Not updated, although mentined in the comment",updated
+A735,,,,
+A734,,,,
+B441,Physical Damage,None,"NEP, minor physical damage","Image does not show much detail, no error"
+B438,Physical Damage,Moderate,"I think heavy damage, since the shape of the culvert is altered.",Error corrected
+B433,,,,
+B431,,,,
+C785,,,,
+C782,,,,
+C779,,,,
+C774,Accessible,Yes,A lot of the information is missing; so I think it's a inaccessible,fixed
+C773,Accessible,Yes,A lot of the information is missing; so I think it's a inaccessible,fixed
+C773,Physical damage,NULL,None;,fixed
+C772,,,Can you specify in comment why outlet related informations are missing?,Fixed
+C768,,,,
+C766,,,,
+C761,,,,
+C762,,,,
+C759,,,A lot of the information is missing but you mentioed it was accessible? Can you review these missing questions please.,
+C757,,,,
+C747,,,,
+C742,,,,
+C743,,,,
+C737,,,,
+C733,,,,
+C734,,,,
+C730,,,,
+C725,,,,
+C720,,,,
+C719,,,,
+C718,,,,
+C714,,,,
+D727,,,,
+D724,,,,
+D720,Number of the culvert?,1,"NEP, 2",there are 2 under vegetation
+D717,,,,
+D715,,,,
+D712,,,,
+D708,,,,
+D707,,,,
+D703,Silting,10% to 30% Silted,Looks clean,I believe the outlet had some that was just collecting
+D700,Culvert Accessibility,Yes,Supposed to be No,updated
+E183,Span In and Rise In,60 by 48,"It's not standard size, standard size may be 60 by 46",updated
+E180,,,,
+E178,Corrosion,Moderate,Major,updated
+E176,,,,
+E175,,,,
+E170,Material,Concrete,Corrugated Metal,updated
+A784,,,,
+A782,,,,
+B489,,,Could take a better photo for the outlet.,steep cliffs did not allow
+B487,,,,
+B485,,,,
+B475,,,,
+B472,Siliting,30% to 60% Silted,"Do you think the debris is blocking water flow? If yes, then your input is correct.","silting was within interior, picture does not show clearly"
+B467,,,,
+B458,Scour,Major Scour ( 3 ft to 8 ft),"It appears to be a minor or, at best, moderate scour.",could not take picture from far enough to show scour
+B455,,,,
+B443,,,,
+B442,,,,
+C828,,,,
+C821,,,,
+C816,,,,
+C806,Scour,Severe Scour ( > 8 ft),NEP,the trees in the picture block the view of the channel
+C797,,,,
+C792,,,,
+C790,,,,
+C788,Reason for Inaccessability,Below Water,"Should be blank, because it's accessibility is Yes",cannot change it to blank after selecting something
+D778,Physical Damage,None,Minor Damage,
+D777,,,,
+D772,,,,
+D756,,,,
+D743,,,,
+D742,,,,
+D736,,,,
+D732,Physical Damage,Minor Damage (metal),NEP,
+D730,,,,
+D729,,,,
+E233,,,,
+E229,,,,
+E225,,,,
+E222,,,,
+E216,,,,
+E210,,,,
+E209,,,,
+E198,,,,
+E189,,,,
+E187,,,,
+A823,,,,
+A822,Culvert ID,822,Missing A; A822,
+A820,,,,
+A816,,,,
+A811,,,,
+A808,,,,
+A806,,,,
+A803,,,,
+A796,,,,
+A792,Silting,"Minor Silting, <10%",Clean,
+A791,Inlet is MDI or SCI,No,Yes,
+A789,Inlet is MDI or SCI,No,Yes,
+B526,Span In and Rise In,118 by 78,Standard size is 117 by 79,size was correct
+B523,,,,
+B521,Span In and Rise In,50 by 33,Standard size is 49 by 33,form says 137 x 87 ?
+B521,Corrosion,Major,NEP,"Corrosion on interior, found when walking thru"
+B515,Inlet end section,Missing,Metal end section,Error Corrected
+B512,,,,
+B508,,,,
+B507,Number of Culverts,1,2,Error corrected
+B507,Channel Condition,Blank,,No channel was evident
+B503,,,"Could take a better photo, because five culverts are not shown in any photo.",Comment notes why
+B500,Silting,10% to 30% Silted,Looks 60%-90%,Angle of photo alter sitling perspective
+B494,,,,
+B491,,,,
+C855,,,,
+C853,,,,
+C850,,,,
+C846,,,,
+C843,,,,
+C840,,,,
+C835,,,,
+C832,,,,
+C831,,,,
+C830,,,,
+D834,,,,
+D791,,,,
+D858,Corrosion,Not known,"Since there is only silted 10% to 30%, so I think you can cross check the corrosion condition.","corrosion is normally also seen at the bottom of the culvert , due to silt we aren't able to justify that there is no corrosion evident"
+D787,Silting,10% to 30%,"NEP, it's probably more from second picture","Weeds block from further viewing in picture , evident in inlet."
+D861,,,,
+D805,Physical Damage,None,Minor,"the damage does not obstruct flow, just the way it was cut on the corrugated metal. Still decided to keep it as none"
+D830,,,,
+D808,,,,
+D849,,,,
+D789,,,,
+D786,,,,
+D822,,,,
+D796,Outlet end section,No end section,"NEP, since outlet is covered by trees, so unknown could be best option","we could see the culvert, there was no end section."
+D833,,,,
+D848,,,,
+D799,,,,
+D864,,,,
+D832,Physical Damage,None,Minor Damage,"updated, damage does not obstruct flow"
+D801,Physical Damage,None,Looks Moderate Damage,updated to minor was not moderate
+D813,Physical Damage,None,Looks Moderate Damage,updated
+D855,RiseIn,21,"As the culvert shape is circular, rise in and span in should be equal",updated
+D865,,,,
+D807,,,,
+D826,,,,
+D794,Silting,10% to 30% Silted,Looks clean,"please review images, clearly not clean"
+D837,,,,
+D817,,,,
+D836,,,,
+D845,,,,
+D824,,,Photo quality should be better.,due to conditions that was the best picture possible
+E268,,,,
+E239,,,,
+E254,,,,
+E287,,,,
+E236,,,,
+E241,,,,
+E277,,,,
+E266,,,,
+E283,Silting,60% to 90% Silted,>90%,
+E276,,,,
+E245,,,,
+E259,,,,
+E273,,,,
+E262,,,,
+E265,,,,
+E257,Culvert Shape,Circular,Should not be circular! Please check and make the correction.,
+A972,,,,
+A968,,,Please update your missing information.,Updated
+A967,,,,
+A964,,,Please update your missing information,Updated
+A962,,,,
+A959,,,,
+A956,,,,
+A955,Corrosion,Moderate,Major,Corrected
+A953,,,,
+A951,,,,
+A946,,,Please update your outlet information,Updated
+A939,,,,
+A938,,,,
+A935,,,,
+A932,,,,
+A931,,,,
+A926,,,,
+A924,,,,
+A920,,,,
+A918,Silting,Silting,> 50% silted,Corrected
+B673,Physical damage,Minor,"Moderate, since the shape is altered",Error corrected.
+B671,,,,
+B670,Physical damage,Minor,NEP; Major,Error corrected
+B670,Scour,Little or No Scour,Minor scour,"scour was less than 1 foot, image makes channel look worse"
+B667,Physical damage,Minor,"NEP; Moderate, since shape is altered",Error corrected
+B666,Physical damage,Minor,"NEP; Moderate, since shape is altered",Error corrected
+B665,,,,
+B661,,,,
+B658,Silting,30% to 60%,60% to 90%,Error corrected
+B655,,,,
+B651,,,,
+B649,,,,
+B644,,,,
+B642,Physical damage,Minor,"NEP; Moderate,",Damage appears to be moderate to us
+B637,Accessible,Yes,"No, since too deep to get measurement",most of form was filled
+B625,,,,
+B624,,,,
+B620,Comments,Blank,You could add a comment about the channel condition as you leave it as blank,David from DOT told us to do other for MDI types
+B619,Comments,Blank,You could add a comment about the channel condition as you leave it as blank,David from DOT told us to do other for MDI types
+B618,Comments,Blank,Why is the inlet not visible! Please add a comment explaining the reason.,Inlet was not found assumed to be MDI on interstate
+B611,,,,
+B608,,,,
+B605,,,,
+B599,,,,
+B596,,,,
+B590,,,,
+B582,,,,
+B581,,,,
+B580,,,,
+B576,,,,
+D1028,,,,
+D1025,,,,
+D1023,,,,
+D1022,,,,
+D1018,,,,
+D1009,,,,
+D1007,,,,
+D1004,,,,
+D1002,,,,
+D999,,,,
+D996,,,,
+D985,,,,
+D982,,,,
+D981,,,,
+D979,,,,
+D978,,,,
+D974,,,,
+D970,Comments,Blank,You could add a comment about the channel condition as you leave it as blank,we were told that if there's no channel evident we do not put anything for channel condition
+D969,Comments,Blank,You could add a comment about the channel condition as you leave it as blank,we were told that if there's no channel evident we do out anything for channel condition
+D964,,,,
+D960,,,,
+D959,,,,
+D958,,,,
+E356,Rise In,24,"Since it's arch pipe, standard measurement is 35 by 26","our input was 26, standard size is 35x24. updated"
+E353,,,,
+E351,,,,
+E349,Inlet is MDI or SDI,Missing,Yes,updated
+E344,,,,
+E341,,,,
+E338,,,,
+E336,,,,
+E332,,,,
+E328,,,,
+E323,,,,
+E320,,,,
+E318,,,,
+E317,,,,
+A988,,,,
+A1007,,,,
+A980,,,,
+A1018,,,,
+A1013,,,,
+A1020,Scoru,Little or no scour,Minor scour,
+A995,,,,
+A992,,,,
+A1003,,,,
+A994,,,,
+A985,,,,
+A979,,,,
+A1015,OutletEndSectionType,Blank,Please update the blank section as you mentioned in the comment,
+A982,,,,
+B712,Corrosion,Moderate,NEP,
+B679,,,,
+B687,,,,
+B721,Corrosion,Minor,Moderate,
+B700,,,,
+B711,,,,
+B716,,,,
+B683,,,,
+B686,Silting,30% to 60%,"NEP,",
+B717,,,,
+B675,,,,
+B704,,,,
+B689,,,,
+B674,,,,
+B682,,,,
+B702,,,The photo should be taken from a different angle to show the inside of the pipe.,
+B699,,,,
+B713,,,,
+B719,,,,
+B767,,,,
+C885,,,,
+C902,,,,
+C908,,,,
+C864,,,,
+C878,,,,
+C880,,,,
+C887,,,,
+C884,,,,
+C897,,,,
+C889,,,,
+C866,,,,
+C895,,,,
+C876,,,,
+C861,,,,
+C899,,,,
+C922,,,,
+C893,,,,
+C905,,,,
+C913,,,,
+C865,,,,
+D1044,,,,
+D1092,,,,
+D1051,Corrosion,Minor,Moderate,
+D1048,Silting,10% to 30%,< 10%,
+D1099,,,,
+D1085,,,,
+D1031,,,,
+D1061,,,,
+D1052,Physical damage,Moderate,"NEP, minor",
+D1109,,,,
+D1030,,,,
+D1050,,,,
+D1098,,,,
+D1039,Silting,10% to 30% Silted,< 10%,
+D1106,,,,
+D1075,,,,
+D1108,,,,
+D1074,,,,
+D1071,,,,
+D1058,,,,
+D1054,,,,
+D1077,,,,
+D1060,,,,
+D1110,Silting,10% to 30% Silted,< 10%,
+E357,,,,
+E380,,,,
+E387,,,,
+E366,,,,
+E361,,,,
+E369,Outlet end section,Metal end section,Concrete slope,updated
+E362,Metarials,Corrugated Metal,"If the culvert is not found, then how do you determine the metal? Please clarify.",updated
+E364,,,,
+E393,,,,
+E374,,,,
+E365,,,,
+E372,,,,

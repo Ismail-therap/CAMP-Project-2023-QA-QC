@@ -1,0 +1,383 @@
+---
+title: 'CAMP Project: QA/QC Data Analysis'
+author: "Md Ismail Hossain"
+date: '2023-07-03'
+output: pdf_document
+---
+
+```{r setup, message = FALSE, warning = FALSE, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Data Loading:
+
+
+```{r,echo=FALSE}
+
+# Main data
+library(readr)
+df <- read_csv("E:/CAMP/Clean_QC_Data/Camp_PhaseII_Production_06192023_03-Jul-23_11-24/data/Culvert_Collection_Points_2023A.csv")
+head(df)
+
+
+
+# QC data
+
+qc_df <-  read_csv("E:/CAMP/Clean_QC_Data/qc_df_updated_1.csv")
+
+
+library(stringr)
+
+# Modify the "Question" column
+qc_df$Question <- str_replace_all(qc_df$Question, "\\s+", "")  # Remove spaces
+qc_df$Question <- str_to_lower(qc_df$Question)  # Convert to lowercase
+qc_df$Question <- str_remove_all(qc_df$Question, "[^a-z]")  # Keep only text (remove non-alphabetic characters)
+
+library(tidyverse)
+
+# Reshape the data from long to wide format
+wide_df_qc <- qc_df %>%
+  pivot_wider(names_from = Question,
+              values_from = c(Input, Comment_QC, Comment_FO),
+              names_sep = "_") %>%
+  unnest(everything())
+
+wide_df_qc$Team <- substr(wide_df_qc$`Culvert ID`, 1, 1)
+
+
+wide_df_qc$filter_good_id <- rowSums(is.na(wide_df_qc))
+wide_df_qc$filter_good_id <- ifelse(wide_df_qc$filter_good_id == 180,"No_issue","At_least_one_issue")
+
+```
+
+## Main Data
+
+```{r,echo=FALSE}
+library(lubridate)
+# Convert the CreationDateTime column to a DateTime object
+df$CreationDateTime <- ymd_hms(df$CreationDateTime)
+
+# Create separate Date and Time columns
+df$Date <- as.Date(df$CreationDateTime)
+df$Time <- format(df$CreationDateTime, "%H:%M:%S")
+
+
+# Calculate the start and end dates
+start_date <- min(df$Date)
+end_date <- max(df$Date)
+
+# Create text strings
+start_text <- paste(as.character(start_date))
+end_text <- paste(as.character(end_date))
+```
+# Exploratory Analysis:
+
+
+Data collection starting from `r start_text` and we are using the data till `r end_text`.
+
+```{r,echo=FALSE}
+# Create a new column for the team identification
+df$Team <- substr(df$CulvertID, 1, 1)
+paste("Number of Rows:", as.character(dim(df))[1])
+
+
+# Get the overall unique count of CulvertID
+overall_count <- length(unique(df$CulvertID))
+
+paste("Number of unique culverts:", as.character(overall_count))
+
+```
+So, there are `r dim(df)[1]` rows in the data and `r overall_count` unique culvert inspected. Let's find the culverts which are not uniquely entered. 
+
+```{r,echo=FALSE}
+# Find the duplicate CulvertID values
+duplicate_culvertID <- df[duplicated(df$CulvertID) | duplicated(df$CulvertID, fromLast = TRUE), "CulvertID"]
+
+# Print the duplicate CulvertID values
+print(unique(duplicate_culvertID))
+
+```
+So, this 8 culvert have entered more than one times. We need to fix the entry for them.
+
+
+Let's find the number of culvert inspected by team:
+```{r}
+# Load the required packages
+library(dplyr)
+library(ggplot2)
+
+# Calculate the count of culverts inspected by each team
+team_counts <- df %>%
+  group_by(Team) %>%
+  summarize(CulvertCount = n())
+team_counts
+
+
+```
+
+Let's find the rows where the Team ID have discrepancies.
+
+```{r}
+# Find the rows where Team ID is other than A, B, C, D, and E
+TeamID_issues <- df[!df$Team %in% c("A", "B", "C", "D", "E"), ]
+TeamID_issues[,c("CulvertID","Collector")]
+```
+
+Let's remove this 
+
+```{r}
+# Calculate the count of culverts inspected by each team
+filtered_df <- df[df$Team %in% c("A", "B", "C", "D", "E"), ]
+
+
+team_counts <- filtered_df %>%
+  group_by(Team) %>%
+  summarize(CulvertCount = n())
+
+
+# Create a bar chart using ggplot2
+ggplot(data = team_counts, aes(x = Team, y = CulvertCount)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_text(aes(label = CulvertCount), vjust = -0.5) +  # Add value labels
+  labs(x = "Team", y = "Count of Culverts Inspected") +
+  ggtitle("Number of Culverts Inspected by Each Team")
+```
+GPS coordinate location accuracy:
+
+```{r}
+df$Location_accuracy <- ifelse(df$HorizEstAcc > 1.5, "Inaccurate_Location(>1.5)","Accurate_Location") 
+
+
+# Create the table
+location_table <- table(df$Location_accuracy)
+
+# Create a data frame from the table
+location_df <- data.frame(Location_accuracy = names(location_table),
+                          Count = as.numeric(location_table))
+
+# Calculate the percentage
+location_df$Percentage <- location_df$Count / sum(location_df$Count) * 100
+
+# Create the pie chart using ggplot2
+pie_chart <- ggplot(data = location_df, aes(x = "", y = Count, fill = Location_accuracy)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start = 0) +
+  labs(fill = "Location Accuracy", x = NULL, y = NULL, title = "Location Accuracy Distribution (HorizEstAcc)") +
+  theme_void() +
+  theme(legend.position = "right") +
+  geom_text(aes(label = paste0(round(Percentage), "%")), position = position_stack(vjust = 0.5))
+
+# Display the pie chart
+print(pie_chart)
+```
+
+Now we have a hypothesis that if there is an error occurred in any column then there is high possibility that there will be another error made on measuring the location accuracy. We will test this hypothesis in the later section.
+
+
+## QC Data:
+
+```{r}
+#dim(wide_df_qc)[1]
+```
+Total QC item is `r dim(wide_df_qc)[1]` among `r overall_count` culvert collected till `r end_text`, which is `r round(dim(wide_df_qc)[1]/overall_count,2)*100`\% overall. Let's observe the team wise inspection and the \% of error (at least one error):
+
+```{r}
+total_qc_by_tm <- as.data.frame(table(wide_df_qc$Team))
+at_least_one_err <- as.data.frame(table(wide_df_qc$Team,wide_df_qc$filter_good_id))
+at_least_one_err <- subset(at_least_one_err, Var2 == 'At_least_one_issue')
+
+# Entering data
+Team <- at_least_one_err$Var1
+Total_QC <- total_qc_by_tm$Freq
+Error <- at_least_one_err$Freq
+
+qc_per_tab <- data.frame(Team,Total_QC,Error)
+qc_per_tab$error_per <- round(qc_per_tab$Error/qc_per_tab$Total_QC,2)
+
+
+# Create the bar plot
+library(ggplot2)
+
+ggplot(qc_per_tab, aes(x = Team)) +
+  geom_bar(aes(y = Total_QC), stat = "identity", fill = "cyan", colour = "#006000") +
+  geom_line(aes(y = error_per * max(Total_QC)), color = "red", size = 1, group = 1) +
+  geom_point(aes(y = error_per * max(Total_QC)), color = "red", size = 3) +
+  labs(title = "Number of QC Items and Percentage of Occurring Error",
+       x = "Team", y = "Total QC Items") +
+  scale_y_continuous(
+    name = "Total QC Items",
+    sec.axis = sec_axis(
+      ~ . / 352,
+      name = "Percentage of Occurring Error",
+      labels = function(x) paste0(x * 100, "%"),
+      breaks = scales::pretty_breaks(n = 5)
+    )
+  ) +
+  geom_text(aes(y = Total_QC, label = Total_QC), vjust = -0.3) +
+  geom_text(aes(y = error_per * 100, label = paste0(error_per * 100, "%")), vjust = -3) +
+  theme_bw()
+
+
+```
+
+## Error Analysis:
+
+```{r}
+qc_df_with_err <- wide_df_qc %>% filter(filter_good_id == "At_least_one_issue")
+```
+So, in total `r dim(qc_df_with_err)[1]` culvert id have at least one issue. 
+
+
+
+
+
+
+```{r}
+# Assuming your dataframe is called 'data'
+qc_df_with_err$non_missing_count <- rowSums(!is.na(qc_df_with_err[, 2:181]))
+summary(qc_df_with_err$non_missing_count)
+
+qc_df_with_err$error_count <- ifelse(qc_df_with_err$non_missing_count <= 3, "One_Error", "> One_Error")
+table(qc_df_with_err$error_count)
+
+```
+
+
+```{r}
+# Inner join 
+colnames(qc_df_with_err)[1] <- 'CulvertID'
+df_merged <- merge(qc_df_with_err,df, by = "CulvertID")
+mismatched_id <- setdiff(qc_df_with_err$CulvertID, df$CulvertID)
+
+```
+
+
+After merging the main data with QC data (infected id's only) we are observing some id mismatch. This happens may be that id data removed from the database or something else happened. This are the id's (total `r length(mismatched_id)` culvert id) which are not matching with the main data set although we did the QC for them: 
+
+`r mismatched_id`
+
+
+```{r}
+table(df_merged$error_count,df_merged$Location_accuracy)
+```
+
+## Word cloud about the QC comments and FO response:
+
+```{r}
+# Preprocess the text data
+library(tm)
+library(wordcloud)
+
+# Assuming you have a dataframe named 'df' and a text column named 'text_column'
+
+# Create a Corpus from the text column
+corpus <- Corpus(VectorSource(qc_df$Comment_QC))
+
+# Preprocess the corpus
+corpus <- tm_map(corpus, content_transformer(tolower))  # Convert text to lowercase
+corpus <- tm_map(corpus, removePunctuation)  # Remove punctuation
+corpus <- tm_map(corpus, removeNumbers)  # Remove numbers
+corpus <- tm_map(corpus, removeWords, stopwords("english"))  # Remove common English stopwords
+
+# Create a document-term matrix
+dtm <- DocumentTermMatrix(corpus)
+
+# Calculate term frequencies
+word_freq <- colSums(as.matrix(dtm))
+
+# Generate word cloud
+{wordcloud(names(word_freq), freq = word_freq, random.order = FALSE, colors = brewer.pal(8, "Dark2"))
+
+# Adjust word cloud appearance
+title(main = "QC comment", col.main = "black", font.main = 1, cex.main = 1.5)}
+
+```
+
+
+
+```{r}
+# Preprocess the text data
+library(tm)
+library(wordcloud)
+
+# Assuming you have a dataframe named 'df' and a text column named 'text_column'
+
+# Create a Corpus from the text column
+corpus <- Corpus(VectorSource(qc_df$Comment_FO))
+
+# Preprocess the corpus
+corpus <- tm_map(corpus, content_transformer(tolower))  # Convert text to lowercase
+corpus <- tm_map(corpus, removePunctuation)  # Remove punctuation
+corpus <- tm_map(corpus, removeNumbers)  # Remove numbers
+corpus <- tm_map(corpus, removeWords, stopwords("english"))  # Remove common English stopwords
+
+# Create a document-term matrix
+dtm <- DocumentTermMatrix(corpus)
+
+# Calculate term frequencies
+word_freq <- colSums(as.matrix(dtm))
+
+# Generate word cloud
+{wordcloud(names(word_freq), freq = word_freq, random.order = FALSE, colors = brewer.pal(8, "Dark2"))
+
+# Adjust word cloud appearance
+title(main = "FO comment" ,col.main = "black", font.main = 1, cex.main = 1.5)}
+
+```
+
+
+
+
+
+
+
+
+
+
+## Word cloud about comments they made about the culverts for all the data collected:
+
+
+```{r}
+
+# Preprocess the text data
+library(tm)
+library(wordcloud)
+
+# Assuming you have a dataframe named 'df' and a text column named 'text_column'
+
+# Create a Corpus from the text column
+corpus <- Corpus(VectorSource(df$Comments))
+
+# Preprocess the corpus
+corpus <- tm_map(corpus, content_transformer(tolower))  # Convert text to lowercase
+corpus <- tm_map(corpus, removePunctuation)  # Remove punctuation
+corpus <- tm_map(corpus, removeNumbers)  # Remove numbers
+corpus <- tm_map(corpus, removeWords, stopwords("english"))  # Remove common English stopwords
+
+# Create a document-term matrix
+dtm <- DocumentTermMatrix(corpus)
+
+# Calculate term frequencies
+word_freq <- colSums(as.matrix(dtm))
+
+# Generate word cloud
+{wordcloud(names(word_freq), freq = word_freq, random.order = FALSE, colors = brewer.pal(8, "Dark2"))
+
+# Adjust word cloud appearance
+title( col.main = "black", font.main = 1, cex.main = 1.5)}
+
+```
+
+
+
+
+
+```{r}
+# dim(df_merged)
+# # Filter out columns with complete missing values
+# df_qc_complete_case <- df_merged[, apply(!is.na(df_merged), 2, any)]
+# dim(df_qc_complete_case)
+# View(df_qc_complete_case)
+```
+
+
