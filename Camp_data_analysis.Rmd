@@ -6,18 +6,18 @@ output: pdf_document
 ---
 
 ```{r setup, message = FALSE, warning = FALSE, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE,message = FALSE, warning = FALSE)
+
 ```
 
-# Data Loading:
+\newpage
 
-
-```{r,echo=FALSE}
+```{r, message = FALSE, warning = FALSE, include = FALSE}
 
 # Main data
 library(readr)
 df <- read_csv("E:/CAMP/Clean_QC_Data/Camp_PhaseII_Production_06192023_03-Jul-23_11-24/data/Culvert_Collection_Points_2023A.csv")
-head(df)
+
 
 
 
@@ -50,9 +50,8 @@ wide_df_qc$filter_good_id <- ifelse(wide_df_qc$filter_good_id == 180,"No_issue",
 
 ```
 
-## Main Data
 
-```{r,echo=FALSE}
+```{r,echo=FALSE,message = FALSE, warning = FALSE}
 library(lubridate)
 # Convert the CreationDateTime column to a DateTime object
 df$CreationDateTime <- ymd_hms(df$CreationDateTime)
@@ -70,12 +69,12 @@ end_date <- max(df$Date)
 start_text <- paste(as.character(start_date))
 end_text <- paste(as.character(end_date))
 ```
-# Exploratory Analysis:
+# Exploratory Analysis of Main Data:
 
 
 Data collection starting from `r start_text` and we are using the data till `r end_text`.
 
-```{r,echo=FALSE}
+```{r,echo=FALSE,message = FALSE, warning = FALSE}
 # Create a new column for the team identification
 df$Team <- substr(df$CulvertID, 1, 1)
 paste("Number of Rows:", as.character(dim(df))[1])
@@ -142,7 +141,8 @@ ggplot(data = team_counts, aes(x = Team, y = CulvertCount)) +
   labs(x = "Team", y = "Count of Culverts Inspected") +
   ggtitle("Number of Culverts Inspected by Each Team")
 ```
-GPS coordinate location accuracy:
+\newpage
+\textbf{GPS coordinate location accuracy:}
 
 ```{r}
 df$Location_accuracy <- ifelse(df$HorizEstAcc > 1.5, "Inaccurate_Location(>1.5)","Accurate_Location") 
@@ -174,7 +174,9 @@ print(pie_chart)
 Now we have a hypothesis that if there is an error occurred in any column then there is high possibility that there will be another error made on measuring the location accuracy. We will test this hypothesis in the later section.
 
 
-## QC Data:
+\newpage
+
+## Exploratory analysis of QC Data:
 
 ```{r}
 #dim(wide_df_qc)[1]
@@ -220,7 +222,7 @@ ggplot(qc_per_tab, aes(x = Team)) +
 
 ```
 
-## Error Analysis:
+## A closer look on error data:
 
 ```{r}
 qc_df_with_err <- wide_df_qc %>% filter(filter_good_id == "At_least_one_issue")
@@ -235,12 +237,13 @@ So, in total `r dim(qc_df_with_err)[1]` culvert id have at least one issue.
 ```{r}
 # Assuming your dataframe is called 'data'
 qc_df_with_err$non_missing_count <- rowSums(!is.na(qc_df_with_err[, 2:181]))
-summary(qc_df_with_err$non_missing_count)
+#summary(qc_df_with_err$non_missing_count)
 
 qc_df_with_err$error_count <- ifelse(qc_df_with_err$non_missing_count <= 3, "One_Error", "> One_Error")
 table(qc_df_with_err$error_count)
 
 ```
+When an error is made in more than one entry or exactly in one entry, this tally will indicate the corresponding number of culverts.
 
 
 ```{r}
@@ -256,12 +259,64 @@ After merging the main data with QC data (infected id's only) we are observing s
 
 `r mismatched_id`
 
+\newpage
+
+## Hypothesis testing:
+
+Let's find number of culvert where there is also location error: 
 
 ```{r}
 table(df_merged$error_count,df_merged$Location_accuracy)
 ```
 
-## Word cloud about the QC comments and FO response:
+Now we have the hypothesis that if an error occurs in any column, there is a high likelihood that another error will occur when measuring the location accuracy. This hypothesis will be tested in a subsequent section.
+
+The above contingency table demonstrates that only 5 of the QC items with the error also have an inaccurate location issue. We can conduct a statistical test of the following hypothesis:
+
+\textbf{$H_0$:} Error counts per culvert and GPS location error are independent. 
+
+\textbf{$H_1$:} Error counts per culvert and GPS location error are dependent.
+
+```{r}
+cor.test(df_merged$non_missing_count,df_merged$HorizEstAcc, 
+                    method = "pearson")
+
+```
+
+The p-value calculated is greater than 0.05. Therefore, at a 5\% level of significance, we cannot reject the null hypothesis or conclude that error counts per culverts are independent of GPS location (HorizEstAcc) error.
+
+## Error Trend (at least one error per culvertID):
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(scales)
+
+# Assuming you have a dataframe named 'df_merged' with a column named 'Date'
+
+# Count the occurrences of each date
+date_counts <- df_merged %>%
+  count(Date)
+
+# Calculate the overall average
+overall_average <- mean(date_counts$n)
+
+# Create the time series line chart
+ggplot(date_counts, aes(x = Date, y = n)) +
+  geom_line(color = "steelblue", size = 1) +
+  geom_hline(yintercept = overall_average, color = "red", linetype = "dashed", size = 1) +
+  labs(x = "Date", y = "Daily Error Count", title = "Error Line Chart") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_x_date(breaks = date_breaks("1 day"), labels = date_format("%Y-%m-%d"))
+
+
+```
+
+Daily average count of the error is `r round(overall_average,2)` which presented using red dashed line. Let's observe few analysis (word cloud) using the comments made by Field officer and QA/QC analyst:
+
+
+## Word cloud of QC comments:
 
 ```{r}
 # Preprocess the text data
@@ -289,11 +344,17 @@ word_freq <- colSums(as.matrix(dtm))
 {wordcloud(names(word_freq), freq = word_freq, random.order = FALSE, colors = brewer.pal(8, "Dark2"))
 
 # Adjust word cloud appearance
-title(main = "QC comment", col.main = "black", font.main = 1, cex.main = 1.5)}
+title( col.main = "black", font.main = 1, cex.main = 1.5)}
+
+
+
+
+
+
 
 ```
 
-
+## Word cloud of FO comments:
 
 ```{r}
 # Preprocess the text data
@@ -321,7 +382,7 @@ word_freq <- colSums(as.matrix(dtm))
 {wordcloud(names(word_freq), freq = word_freq, random.order = FALSE, colors = brewer.pal(8, "Dark2"))
 
 # Adjust word cloud appearance
-title(main = "FO comment" ,col.main = "black", font.main = 1, cex.main = 1.5)}
+title(col.main = "black", font.main = 1, cex.main = 1.5)}
 
 ```
 
@@ -334,7 +395,7 @@ title(main = "FO comment" ,col.main = "black", font.main = 1, cex.main = 1.5)}
 
 
 
-## Word cloud about comments they made about the culverts for all the data collected:
+## Word cloud of comments (main data):
 
 
 ```{r}
